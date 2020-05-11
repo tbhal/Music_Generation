@@ -12,16 +12,24 @@ The building block of WaveNet is **Casual Dialated 1D Convolution layers**.
 
 **1D Covolutions**
 The objective of 1D convolution is similar to the Long Short Term Memory model. It is used to solve similar tasks to those of LSTM. In 1D convolution, a kernel or a filter moves along only one direction.
+![](images/1D%20convolution.jpg)
 
 **Casual 1D Convolutions**
 This is defined as convolutions where output at time t is convolved only with elements from time t and earlier in the previous layer.
+![](images/Casual%201D%20convolution.jpg)
 
 **Dialated Casual 1D Convolutions**
 A *Causal 1D convolution layer* with the holes or spaces in between the values of a kernel is known as Dilated 1D convolution.
 The Dialated 1D convolution network increases the receptive field by exponentailly increasing the dialation rate of every hidden layer.
 
+![](images/dilated.jpg)
+
+![](imges/Dialated%201D%20Convolutions.jpg)
+
 **Residual Block of WaveNet**
 Residual and Skip Connections are used thoughout the network to speed up convergence and enable training of much deeper models.
+
+![](images/Residual%20Block.jpg)
 
 **Workflow of WaveNet**
 1. Input is fed into 1D convolutions.
